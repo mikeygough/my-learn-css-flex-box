@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Flex Box Challenge 3 Solution</title>
+  <title>Flex Box Challenge 3</title>
   <style>
     /* Your styles here */
 
@@ -10,35 +10,36 @@
     body {
       /* Set a base font style */
       /* font family Helvetica */
-      
+      font-family: 'Helvetica';
       /* font weight 100 */
-      
+      font-weight: 100;
       /* font size 18px */
-      
+      font-size: 18px;
       /* line-height 1.5 */
-      
+      line-height: 1.5;
       /* color #666 */
-      
+      color: #666;
       /* display flex */
-      
+      display: flex;
       /* justify content center */
-      
+      justify-content: center;
       /* align-items: center; */
-
+      align-items: center;
     }
 
     /* Use flex to arrange everything in a column */
     /* Style the from tag */
     form {
       /* use flex to display everything in the form in a column */
-      
+      display: flex;
+      flex-direction: column;
       /* padding 2em */
-      
+      padding: 2em;
       /* Make the form fill the space but not larger than 600px */
       /* width: 100% */
-      
+      width: 100%;
       /* max-width 600px */
-      
+      max-width: 600px;
     }
 
     /* Some general styles */
@@ -46,9 +47,9 @@
     input,
     textarea {
       /* font size 1em */
-      
+      font-size: 1em;
       /* padding 0.75em */
-      
+      padding: 0.75em;
     }
 
     /* File upload styles */
@@ -56,48 +57,50 @@
     input[type=file] {
       /* File is special we'll hide it's input */
       /* Hide the file input. You'll use the label for interaction */
-      
+      display: none;
     }
 
     /* Style label with attribute for and value "input-file" <label for="input-file"> */
     label[for=input-file] {
       /* Make this label look like a button */
       /* border style solid, border width 1px */
-      
+      border: 1px solid;
       /* padding 1em */
-      
+      padding: 1em;
       /* border radius 0.25em */
-     
+      border-radius: 0.25em;
       /* text align center */
-      
+      text-align: center;
     }
 
     textarea {
       /* This changes how the box model is calculated */
       /* box-sizing: border-box; */
+      box-sizing: border-box;
       /* width 100% fill the horizontal space */
-      
+      width: 100%;
       /* height of 6em */
-      
+      height: 6em;
     }
 
     /* Use flex to arrange each of the labels in a column */
     /* This covers the first 4 inputs */
     label {
       /* display flex direction column */
-      
+      display: flex;
+      flex-direction: column;
     }
 
     /* The radio buttons and checkboxes need to arranged in a row */
     /* Style a label with the class name h: <label class="h"> */
     label.h {
-      /* flex direction rol */
-      
+      /* flex direction row */
+      flex-direction: row;
       /* align items center */
-      
+      align-items: center;
       /* Add some margin to make some space */
-      /* margin left 0.25em, margin top 0, margin right 0.25em margin left 0 */
-      
+      /* margin left 0.25em, margin top 0, margin right 0.25em margin bottom 0 */
+      margin: 0.25em 0 0.25em 0;
     }
 
     /* Style input type text, email, password, datetime, number */
@@ -108,11 +111,11 @@
     input[type=date],
     input[type=number] {
       /* border solid 1px #666 */
-      
+      border: solid 2px #666;
       /* margin top and bottom 1em left and right 0 */
-      
+      margin: 1em 0;
       /* border radius 0.25em */
-      
+      border-radius: 0.25em;
     }
 
     /* Style the inputs type radio, checkbox, file */
@@ -126,36 +129,38 @@
     /* Style a span that is a child of an input */
     input > span {
       /* margin left 1em 0 everywhere else */
-
+      margin: 0 0 0 1em;
     }
 
     /* Style a button with type = submit <button type="submit"> */
     button[type=submit] {
       /* padding 1em all sides */
-      
+      padding: 1em;
       /* color orange */
-      
+      background-color: orange;
       /* border none */
-      
+      border: none;
       /* border radius 0.25em */
-      
+      border-radius: 0.25em;
       /* margin 1em bottom, 0 on the other 3 sides */
-      
+      margin: 0 0 1em 0;
       /* width 100px */
-      
+      width: 100px;
       /* Move this to right with flex */
       /* align-self: flex-end; */
+      align-self: flex-end;
     }
 
     /* Style section that is a chile of a form */
     form > section {
       /* margin on the top and bottom 1em, margin 0 left and right */
-
+      margin: 0.5em 0;
     }
 
     /* Style the last child section of a form */
     form > section:last-child {
       /* align-self: flex-end; */
+      align-self: flex-end;
     }
   </style>
 </head>
